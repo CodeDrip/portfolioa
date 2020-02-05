@@ -1,15 +1,29 @@
 body {
     background-color: rgb(198, 198, 198);
     color: black;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    width: 100vw;
+    overflow: hidden;
 }
 .reference {
     visibility: hidden;
 }
+.spinning-flower {
+    background: url("images/flower1.webp");
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 70vw;
+    top: -15vh;
+    z-index: 1;
+}
 .header-container {
     /* position: relative; */
     margin: 2vh auto;
+    margin-top: -6vh;
     /* height: 40vh; */
+    /* display: flex; */
 
 }
 .box-shadow {
@@ -47,6 +61,7 @@ header {
     height: 30vh;
     width: 85vw;
     margin: 10px;
+    z-index: 1;
 }
 .header-span-one {
     font-size: 3vw;
@@ -67,15 +82,41 @@ header {
     font-size: 20vh;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
     body {
+        width: 100vw;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .spinning-flower {
+        background: url(images/flower1.webp);
+        border-radius: 50%;
+        height: 285px;
+        width: 285px;
+        position: absolute;
+        left: 70vw;
+        /* top: 1vh; */
+        z-index: 1;
+    }
+    .header-container {
+        position: absolute;
+        top: -14vh;
+        
+    }
+    .box-shadow {
+        position: relative;
+        display: flex;
+        background: black;
+        height: 35vh;
         width: 90vw;
-        margin: 5px;
+        margin: 5vh;
+        top: 12vh;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 601px) {...}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
