@@ -55,6 +55,13 @@ body {
     margin: 5vh auto;
     top: -30vh;
 } 
+#header-shadow {
+    height: 35vh;
+    top: 12vh;}
+#header-decor {
+    height: 35vh;
+    top: -30vh;
+}
 header {
     /* visibility: hidden; */
     background-size: auto;
@@ -137,18 +144,38 @@ a {
     display: inline-block; 
     width: 100%; 
     text-align: center; 
-    }
-    
-    a:hover { 
+}
+
+a:hover { 
     background: rgba(238, 13, 13, 0.75); 
-    }
+}
+#bio-shadow {
+    height: 80vh;
+    top: 12vh;}
+#bio-decor {
+    height: 80vh;
+    top: -30vh;
+}
+.bio-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    color: black;
+    height: 73vh;
+    width: 85vw;
+    margin: 10px;
+
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
     body {
         width: 100vw;
         margin: 0 auto;
-        overflow: hidden;
+        overflow-x: hidden;
         background: rgba(0, 0, 0, 0.31);
 
     }
@@ -212,11 +239,19 @@ a {
         right: 3vw;
 
     }
-    nav ul {
-        background: pink;
+    .nav-wrap {
+        margin-top: -35vh; 
     }
-    nav li {
-        background: rgb(53, 53, 79);
+    .bio-container {
+        top: -14vh;
+    }
+    #bio-shadow {
+        height: 80vh;
+        top: -14vh;
+    }       
+     #bio-decor {
+        height: 80vh;
+        top: -100vh;
     }
 }
 /* 
@@ -252,6 +287,14 @@ a {
         margin-top: -31vh;
         padding-right: 9vw;
     }
+    #bio-shadow {
+        height: 80vh;
+        top: -6vh;
+    }
+    #bio-decor {
+        height: 80vh;
+        top: -93vh;
+    }
 
 }
 
@@ -280,11 +323,25 @@ a {
         max-width: 650px;
     }
     .nav-wrap {
-        margin-top: -17vh;
+        margin-top: -20vh;
         padding-right: 8vw;
     }
 
-
+    #bio-shadow {
+        min-height: 500px;
+        height: 80vh;
+        top: 3vh;
+    }
+    #bio-decor {
+        min-height: 500px;
+        height: 80vh;
+        top: -88vh;
+    }
+    .bio-content-wrapper {
+        max-height: 580px;
+        max-width: 650px;
+    }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -313,8 +370,12 @@ a {
         max-width: 750px;
     }
     .nav-wrap {
-        margin-top: -17vh;
+        margin-top: -20vh;
         padding-right: 0;
+    }
+    .bio-content-wrapper {
+        max-height: 625px;
+        max-width: 750px;
     }
 }
 
