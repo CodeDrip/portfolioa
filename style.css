@@ -1,9 +1,13 @@
 body {
-    background-color: rgb(198, 198, 198);
+    /* background-color: rgb(198, 198, 198); */
     color: black;
-    /* margin: 0 auto; */
+    /* margin: 0 auswq1to; */
     width: 100vw;
+    max-width: 750px;
     overflow: hidden;
+    overflow-x: hidden;
+    margin: 0 auto;
+
 }
 .reference {
     visibility: hidden;
@@ -17,18 +21,20 @@ body {
     left: 70vw;
     top: -15vh;
     z-index: 1;
+    margin: -15vh 0;
+
 }
 .header-container {
     /* position: relative; */
     margin: 2vh auto;
     margin-top: -6vh;
+
     /* height: 40vh; */
     /* display: flex; */
 
 }
 .box-shadow {
     position: relative;
-    display: flex;
     background: black;
     height: 35vh;
     width: 90vw;
@@ -63,66 +69,264 @@ header {
     margin: 10px;
     z-index: 1;
 }
+.header-para {
+    display: flex;
+    flex-direction: column;
+    height: 28vh;
+    width: 84vh;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    line-height: 2rem;
+    /* height: 40vh;
+    width: 85vw; */
+    /* margin: 0 4px; */
+    clear: both;
+    overflow: auto;
+}
 .header-span-one {
-    font-size: 3vw;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
     font-family: 'Black Han Sans', sans-serif;
+    float: left;
+    padding-left: 1rem;
+}
+.header-span-one p {
+    display: flex;
 }
 .header-span-two {
-    float: left;
-    font-size: 5vw;
+    display: flex;
+    font-size: 1.5rem;
     font-family: 'Anaheim', sans-serif;
+    margin: -1rem auto;
 }
 .header-span-three {
+    display: flex;
     float: right;
-    font-size: 5vw;
+    font-size: 1.8em;
     font-family: 'Black Han Sans', sans-serif;
+    padding-left: 2.3em;
 }
 .cursive {
     font-family: 'Zhi Mang Xing', cursive;
     font-size: 20vh;
 }
+.nav-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 601px) {
+@media screen and (max-width: 601px) {
     body {
         width: 100vw;
         margin: 0 auto;
         overflow: hidden;
+        background: rgba(0, 0, 0, 0.31);
+
+    }
+    .spinning-flower {
+        background: url("images/flower1.webp");
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 65vw;
+        top: -6vh;
+        z-index: 1;
+        /* overflow: hidden; */
+    }
+    .header-container {
+        /* position: absolute; */
+        top: -14vh;
+        
+    }
+    .header-para {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-between;
+        line-height: 2em;
+        height: 40vh;
+        width: 85vw;
+        /* margin: 0 4px; */
+    }
+    .header-span-one {
+        display: flex;
+        font-size: 1.5em;
+        font-family: 'Black Han Sans', sans-serif;
+        float: left;
+
+    }
+    .header-span-two {
+        display: flex;
+        font-size: 1.5em;
+        font-family: 'Anaheim', sans-serif;
+        margin: -1em auto;
+    }
+    .header-span-three {
+        display: flex;
+        float: right;
+        font-size: 1.8em;
+        font-family: 'Black Han Sans', sans-serif;
+        padding-left: 10vw;
+    }
+    .box-decor {
+        top: -36vh;
+    }
+    .box-shadow {
+        position: relative;
+        /* display: flex; */
+        background: black;
+        height: 35vh;
+        width: 90vw;
+        margin: 5vh;
+        top: 5vh;
+        right: 3vw;
+
+    }
+}
+/* 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+    body {
+        /* max-width: 750px; */
+        /* blue */
+        background: rgb(53, 53, 79);
+    }
+    .spinning-flower {
+        top: -5vh;
+    }
+    .box-shadow {
+        left: -2vh;
+    }
+    .header-para {
+        /* height: 40vh; */
+        line-height: 2em;        
+    }
+    .header-span-one {
+        font-size: 3vw;
+    }
+    .header-span-two {
+        font-size: 4vw;
+        margin: -1em auto;
+    }
+    .header-span-three {      
+        font-size: 4vw;
+        padding-left: 18vw;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: rgb(96, 0, 0);
+    }
+    .spinning-flower {
+        top: -50px;
+    }
+    .header-container {
+        margin: -12vh auto;
+    }
+    .box-shadow {
+        max-width: 700px;
+        max-height: 300px;
+
+    }
+    .box-decor {
+        max-height: 300px;
+        max-width: 700px;
+    }
+    header {
+        max-height: 280px;
+        max-width: 650px;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* body {
+        width: 600px;
+        background: rgb(0, 191, 0);
+    }
+    .spinning-flower {
+        top: -30px;
+    }
+    .header-container {
+        margin: -12vh auto;
+    }
+    .box-shadow {
+        max-width: 800px;
+        max-height: 300px;
+    }
+    .box-decor {
+        max-height: 300px;
+        max-width: 800px;
+    }
+    header {
+        max-height: 280px;
+        max-width: 680px;
+    } */
+    body {
+        background: rgb(0, 96, 8);
+    }
+    .spinning-flower {
+        top: -50px;
+    }
+    .header-container {
+        margin: -12vh auto;
+    }
+    .box-shadow {
+        max-width: 800px;
+        max-height: 300px;
+        left: -9vh;
+
+    }
+    .box-decor {
+        max-height: 300px;
+        max-width: 800px;
+    }
+    header {
+        max-height: 280px;
+        max-width: 750px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* body {
+        max-width: 750px;
+        background: rgb(142, 73, 0);
 
     }
     .spinning-flower {
         background: url(images/flower1.webp);
         border-radius: 50%;
-        height: 285px;
-        width: 285px;
+        height: 350px;
+        width: 350px;
         position: absolute;
-        left: 70vw;
-        /* top: 1vh; */
+        left: 78vw;
+        top: 9vh;
         z-index: 1;
-    }
-    .header-container {
-        position: absolute;
-        top: -14vh;
-        
+        margin: -20vh 0;
     }
     .box-shadow {
-        position: relative;
-        display: flex;
-        background: black;
-        height: 35vh;
-        width: 90vw;
+        height: 300px;
+        width: 800px;
         margin: 5vh;
         top: 12vh;
     }
+    .box-decor {
+        height: 300px;
+        width: 800px;
+    }
+    header {
+        height: 300px;
+        width: 800px;
+    } */
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
