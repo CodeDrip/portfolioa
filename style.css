@@ -4,7 +4,7 @@ body {
     /* margin: 0 auswq1to; */
     width: 100vw;
     max-width: 750px;
-    overflow: hidden;
+    /* overflow: hidden; */
     overflow-x: hidden;
     margin: 0 auto;
 
@@ -93,9 +93,6 @@ header {
     float: left;
     padding-left: 1rem;
 }
-.header-span-one p {
-    display: flex;
-}
 .header-span-two {
     display: flex;
     font-size: 1.5rem;
@@ -107,7 +104,7 @@ header {
     float: right;
     font-size: 1.8em;
     font-family: 'Black Han Sans', sans-serif;
-    padding-left: 2.3em;
+  
 }
 .cursive {
     font-family: 'Zhi Mang Xing', cursive;
@@ -116,7 +113,32 @@ header {
 .nav-wrap {
     display: flex;
     flex-direction: row;
+    float: right;
+    margin-top: -39vh;
+    padding-right: 9vw;
+
 }
+ul {
+    display: inline-block;
+}
+li {
+    float: right;
+}
+a { 
+    color: black; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    background: rgb(255, 255, 255); 
+    padding: 4vh 2vw; 
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+    }
+    
+    a:hover { 
+    background: rgba(238, 13, 13, 0.75); 
+    }
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
@@ -186,6 +208,12 @@ header {
         top: 5vh;
         right: 3vw;
 
+    }
+    nav ul {
+        background: pink;
+    }
+    nav li {
+        background: rgb(53, 53, 79);
     }
 }
 /* 
