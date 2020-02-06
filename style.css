@@ -123,14 +123,17 @@ ul {
 }
 li {
     float: right;
+    padding: 4vh 4px; 
+
 }
 a { 
     color: black; 
     font-weight: 300; 
     letter-spacing: 2px; 
     text-decoration: none; 
-    background: rgb(255, 255, 255); 
-    padding: 4vh 2vw; 
+    background: rgb(255, 255, 255);
+    border: 5px solid #000; 
+    padding: 4vh 4px; 
     display: inline-block; 
     width: 100%; 
     text-align: center; 
@@ -245,6 +248,10 @@ a {
         font-size: 4vw;
         padding-left: 18vw;
     }
+    .nav-wrap {
+        margin-top: -31vh;
+        padding-right: 9vw;
+    }
 
 }
 
@@ -272,34 +279,16 @@ a {
         max-height: 280px;
         max-width: 650px;
     }
+    .nav-wrap {
+        margin-top: -17vh;
+        padding-right: 8vw;
+    }
 
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    /* body {
-        width: 600px;
-        background: rgb(0, 191, 0);
-    }
-    .spinning-flower {
-        top: -30px;
-    }
-    .header-container {
-        margin: -12vh auto;
-    }
-    .box-shadow {
-        max-width: 800px;
-        max-height: 300px;
-    }
-    .box-decor {
-        max-height: 300px;
-        max-width: 800px;
-    }
-    header {
-        max-height: 280px;
-        max-width: 680px;
-    } */
     body {
         background: rgb(0, 96, 8);
     }
@@ -322,6 +311,10 @@ a {
     header {
         max-height: 280px;
         max-width: 750px;
+    }
+    .nav-wrap {
+        margin-top: -17vh;
+        padding-right: 0;
     }
 }
 
