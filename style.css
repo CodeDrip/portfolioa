@@ -144,6 +144,7 @@ a {
     display: inline-block; 
     width: 100%; 
     text-align: center; 
+    margin-right: 20px;
 }
 
 a:hover { 
@@ -157,10 +158,10 @@ a:hover {
     top: -30vh;
 }
 .bio-content-wrapper {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     background-color: #EFEFEF;
     color: black;
     height: 73vh;
@@ -168,7 +169,78 @@ a:hover {
     margin: 10px;
 
 }
+/* .bio-img {
+    shape-outside: url(images/portrait.jpeg);
+  shape-image-threshold: 0.5;
+  float: left;
+} */
+.bio-img {
+    border-radius: 50%;
+    width: 225px;
+    height: 207px;
+    float: left;
+    -webkit-shape-outside: circle(50%);
+    shape-outside: circle(50%);
+    background: url("images/portrait.jpeg");
+    margin-right: 15px;
+}
+/* .bio-img {
+    height: 25vh;
+    width: 25vw;
+    background: url("images/portrait.jpeg");
+    border-radius: 50%;
+    margin: 5px 10px 5px 5px;
+    shape-outside: circle(50%);
 
+} */
+.bio-header {
+    background: blue;
+    /* float: right; */
+    /* display: inline-block; */
+}
+.bio-content {
+    background: orange;
+    height: 40vh;
+    width: 80vw;
+    text-align: justify;
+    font-size: 3.5vmin;
+
+    /* float: right; */
+
+}
+/* .triangle {
+    position: absolute;
+    z-index: -3;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 254px 254px 0 0;
+    border-color: #b700ff transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #007bff #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+} */
+.triangle {
+    width:200px;
+    height:400px;
+    overflow:hidden;
+    position: absolute;
+    z-index: -3;
+    bottom: -10vh;
+}
+.triangle:before {
+    content:"";
+    display:block;
+    width:70%;
+    height:70%;
+    background-image: url('images/dots.jpg');
+    transform: rotate(-45deg);
+    transform-origin:0 0;
+    -ms-transform: rotate(-45deg);
+    -ms-transform-origin:0 0;
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform-origin:0 0;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
