@@ -129,7 +129,7 @@ ul {
     display: inline-block;
 }
 li {
-    float: right;
+    float: left;
     padding: 4vh 4px; 
 
 }
@@ -152,16 +152,13 @@ a:hover {
 }
 #bio-shadow {
     height: 80vh;
-    top: 12vh;}
+    top: 12vh;
+}
 #bio-decor {
     height: 80vh;
     top: -30vh;
 }
-.bio-content-wrapper {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+.bio-wrapper {
     background-color: #EFEFEF;
     color: black;
     height: 73vh;
@@ -169,11 +166,6 @@ a:hover {
     margin: 10px;
 
 }
-/* .bio-img {
-    shape-outside: url(images/portrait.jpeg);
-  shape-image-threshold: 0.5;
-  float: left;
-} */
 .bio-img {
     border-radius: 50%;
     width: 225px;
@@ -184,19 +176,8 @@ a:hover {
     background: url("images/portrait.jpeg");
     margin-right: 15px;
 }
-/* .bio-img {
-    height: 25vh;
-    width: 25vw;
-    background: url("images/portrait.jpeg");
-    border-radius: 50%;
-    margin: 5px 10px 5px 5px;
-    shape-outside: circle(50%);
-
-} */
 .bio-header {
     background: blue;
-    /* float: right; */
-    /* display: inline-block; */
 }
 .bio-content {
     background: orange;
@@ -204,22 +185,7 @@ a:hover {
     width: 80vw;
     text-align: justify;
     font-size: 3.5vmin;
-
-    /* float: right; */
-
 }
-/* .triangle {
-    position: absolute;
-    z-index: -3;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 254px 254px 0 0;
-    border-color: #b700ff transparent transparent transparent;
-    line-height: 0px;
-    _border-color: #007bff #000000 #000000 #000000;
-    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-} */
 .triangle {
     width:200px;
     height:400px;
@@ -241,7 +207,30 @@ a:hover {
     -webkit-transform: rotate(-45deg);
     -webkit-transform-origin:0 0;
 }
-
+#skills-shadow {
+    height: 45vh;
+    top: -88vh;
+}
+#skills-decor {
+    height: 46vh;
+    top: -141vh;
+}
+.skills-wrapper {
+    height: 43vh;
+    width: 85vw;
+    background-color: #EFEFEF;
+}
+.skill-list-wrap ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: rgb(68, 141, 141);
+    height: 40vh;
+}
+.skill-list-wrap li {
+    background: rgb(141, 68, 117);
+    font-size: 4vh;
+}
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
     body {
