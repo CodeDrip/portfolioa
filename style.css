@@ -231,6 +231,22 @@ a:hover {
     background: rgb(141, 68, 117);
     font-size: 4vh;
 }
+#resume-container {
+    top: -50vh;
+    height: 650px;
+}
+#resume-shadow {
+    top: -132vh;
+    height: 680px;
+}
+#resume-decor {
+    top: -264vh;
+    height: 680px;
+}
+.resume-pdf {
+    height: 650px;
+    width: 85vw;
+}
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
     body {
