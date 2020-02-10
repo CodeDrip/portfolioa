@@ -175,6 +175,10 @@ a:hover {
     shape-outside: circle(50%);
     background: url("images/portrait.jpeg");
     margin-right: 15px;
+    background-position: 50% 60%;
+    background-size: 75% 50%;
+
+
 }
 .bio-header {
     background: blue;
@@ -246,6 +250,38 @@ a:hover {
 .resume-pdf {
     height: 650px;
     width: 85vw;
+}
+#projects-shadow {
+    top: -258vh;
+    height: 90vh;
+}
+#projects-decor {
+    top: -355vh;
+    height: 90vh;
+}
+.projects-content {
+    background: #EFEFEF;
+    height: 78vh;
+}
+.projects-wrapper {
+    padding: 10vh 3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 80vw;
+    /* height: 35vh; */
+
+}
+.project-preview {
+    background: papayawhip;
+    margin-top: 10vh;
+    border-radius: 50%;
+    border: .5px solid #000; 
+    height: 130px;
+    width: 130px;
+    top: -2vh;
 }
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
@@ -329,6 +365,10 @@ a:hover {
      #bio-decor {
         height: 80vh;
         top: -100vh;
+    }
+    .bio-img {
+        background-position: 25% 47%;
+        background-size: 190%;
     }
 }
 /* 
