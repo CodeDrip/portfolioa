@@ -136,7 +136,7 @@ a {
     background: rgb(255, 255, 255);
     border: 5px solid #000;
     border-radius: 5px; 
-    padding: 4vh 4px; 
+    padding: 8vh 4px; 
     display: inline-block; 
     width: 100%; 
     text-align: center; 
@@ -152,7 +152,7 @@ a:hover {
     top: 2vh;
 }
 #bio-decor {
-    height: 80vh;
+    height: 99vh;
     top: -86vh;
 }
 .bio-wrapper {
@@ -161,16 +161,24 @@ a:hover {
     flex-direction: column;
     align-items: center; */
     color: black;
-    height: 75vh;
-    width: 85vw;
+    /* height: 75vh; */
+    height: 98vh;
+    top: 5vh;
+    width: 86vw;
     margin: 10px;
+    /* padding-bottom: 50vh; */
 
+}
+.bio-wrapper-1 {
+    top: 50vh;
 }
 .bio-content {
     background-color: rgba(136, 0, 0, 0.351);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 97vh;
+    margin: 0 0 -50vh 0;
 
 }
 .section-discription {
@@ -202,7 +210,7 @@ a:hover {
     padding-top: 2vh;
     font-family: 'Anaheim', sans-serif;
     background: orange;
-    height: 40vh;
+    height: 55vh;
     width: 80vw;
     text-align: justify;
     font-size: 4vmin;
@@ -230,28 +238,37 @@ a:hover {
     -webkit-transform-origin:0 0;
 }
 #skills-shadow {
-    height: 45vh;
-    top: -88vh;
+    height: 60vh;
+    top: -75vh;
 }
 #skills-decor {
-    height: 46vh;
+    height: 60vh;
     top: -141vh;
 }
+#skills-disc {
+    position: relative;
+}
 .skills-wrapper {
-    height: 43vh;
+    height: 55vh;
     width: 85vw;
     background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
 }
 .skill-list-wrap ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background: rgb(68, 141, 141);
-    height: 40vh;
+    height: 45vh;
 }
 .skill-list-wrap li {
     background: rgb(141, 68, 117);
     font-size: 4vh;
+    width: 35vw;
+    margin: 2vh 0 0 3vw;
+    font-family: 'Anaheim', sans-serif;
+
 }
 #resume-container {
     top: -50vh;
@@ -385,19 +402,27 @@ a:hover {
 
     }
     .bio-container {
-        top: -14vh;
+        top: -116vh;
     }
     #bio-shadow {
-        height: 80vh;
-        top: 2vh;
+        height: 103vh;
+        top: 1vh;
     }       
      #bio-decor {
-        height: 80vh;
-        top: -86vh;
+        height: 103vh;
+        top: -109vh;
     }
     .bio-img {
         background-position: 25% 47%;
         background-size: 190%;
+    }
+    #skills-decor {
+        height: 60vh;
+        top: -166vh;
+    }
+    #skills-shadow {
+        height: 60vh;
+        top: -98vh;
     }
 }
 /* 
