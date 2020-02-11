@@ -119,19 +119,14 @@ header {
 }
 .nav-wrap {
     display: flex;
-    flex-direction: row;
-    float: right;
-    margin-top: -39vh;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin-top: -30vh;
     padding-right: 9vw;
-
-}
-ul {
-    display: inline-block;
 }
 li {
-    float: left;
-    padding: 4vh 4px; 
-
+    padding: .5vh 4px; 
+    width: 80vw;
 }
 a { 
     color: black; 
@@ -139,12 +134,14 @@ a {
     letter-spacing: 2px; 
     text-decoration: none; 
     background: rgb(255, 255, 255);
-    border: 5px solid #000; 
+    border: 5px solid #000;
+    border-radius: 5px; 
     padding: 4vh 4px; 
     display: inline-block; 
     width: 100%; 
     text-align: center; 
-    margin-right: 20px;
+    margin-left: 7px;
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 a:hover { 
@@ -152,29 +149,44 @@ a:hover {
 }
 #bio-shadow {
     height: 80vh;
-    top: 12vh;
+    top: 2vh;
 }
 #bio-decor {
     height: 80vh;
-    top: -30vh;
+    top: -86vh;
 }
 .bio-wrapper {
     background-color: #EFEFEF;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     color: black;
-    height: 73vh;
+    height: 75vh;
     width: 85vw;
     margin: 10px;
+
+}
+.bio-content {
+    background-color: rgba(136, 0, 0, 0.351);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section-discription {
+    color: purple;
+    float: left;
+    position: absolute;
+    padding: 2vh 0 0 2vw;
+    font-size: 3vh;
+    font-family: 'Black Han Sans', sans-serif;
 
 }
 .bio-img {
     border-radius: 50%;
     width: 225px;
     height: 207px;
-    float: left;
-    -webkit-shape-outside: circle(50%);
-    shape-outside: circle(50%);
     background: url("images/portrait.jpeg");
-    margin-right: 15px;
     background-position: 50% 60%;
     background-size: 75% 50%;
 
@@ -182,13 +194,19 @@ a:hover {
 }
 .bio-header {
     background: blue;
+    padding-top: 2vh;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3vh;
 }
-.bio-content {
+.bio-par {
+    padding-top: 2vh;
+    font-family: 'Anaheim', sans-serif;
     background: orange;
     height: 40vh;
     width: 80vw;
     text-align: justify;
-    font-size: 3.5vmin;
+    font-size: 4vmin;
+    line-height: 25px;
 }
 .triangle {
     width:200px;
@@ -283,6 +301,15 @@ a:hover {
     width: 130px;
     top: -2vh;
 }
+#contacts-shadow {
+
+}
+#contacts-decor {
+    
+}
+.contacts-wrap {
+
+}
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
     body {
@@ -353,18 +380,20 @@ a:hover {
 
     }
     .nav-wrap {
-        margin-top: -35vh; 
+        margin-top: -30vh;
+        /* top: -39vh; */
+
     }
     .bio-container {
         top: -14vh;
     }
     #bio-shadow {
         height: 80vh;
-        top: -14vh;
+        top: 2vh;
     }       
      #bio-decor {
         height: 80vh;
-        top: -100vh;
+        top: -86vh;
     }
     .bio-img {
         background-position: 25% 47%;
