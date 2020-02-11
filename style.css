@@ -273,21 +273,38 @@ a:hover {
     text-align: right;
 
 }
+#resume-disc {
+    display: block;
+    background: white;
+    /* padding: 5px 0 5px 0; */
+    padding: 2vh 0 2vh 2vw;
+    font-size: 3vh;
+    font-family: 'Black Han Sans', sans-serif;
+}
 #resume-container {
     top: -50vh;
     height: 650px;
 }
 #resume-shadow {
-    top: -160vh;
-    height: 680px;
+    top: -159vh;
+    height: 1369px;
+    padding-bottom: 5px;
 }
 #resume-decor {
-    top: -282vh;
-    height: 680px;
+    padding-top: 5px;
+    top: -396vh;
+    height: 1369px;
+}
+.resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .resume-pdf {
     height: 650px;
     width: 85vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #projects-discription {
     display: inline-block;
@@ -301,14 +318,19 @@ a:hover {
 #projects-shadow {
     top: -276vh;
     height: 288vh;
+    background: rgba(0, 0, 0, 0.13);
 }
 #projects-decor {
     top: -572vh;
     height: 288vh;
+    background: rgba(0, 0, 0, 0.13);
+
 }
 .projects-content {
     background: #EFEFEF;
     height: 285vh;
+    background: rgba(0, 0, 0, 0.13);
+
 }
 .projects-wrapper {
     padding: 10vh 3vw;
@@ -331,10 +353,12 @@ a:hover {
     top: -2vh;
 }
 #contacts-shadow {
+    top: -567vh;
 
 }
 #contacts-decor {
-    
+    top: -609vh;
+
 }
 .contacts-wrap {
 
