@@ -10,6 +10,10 @@ body {
     height: 150vh;
 
 }
+/* .body-wrap {
+    height: 895vh;
+    overflow-y: hidden;
+} */
 .reference {
     visibility: hidden;
 }
@@ -380,6 +384,10 @@ a:hover {
         overflow-x: hidden;
         background: rgba(0, 0, 0, 0.31);
 
+    }
+    .body-wrap {
+        height: 895vh;
+        overflow-y: hidden;
     }
     .spinning-flower {
         background: url("images/flower1.webp");
