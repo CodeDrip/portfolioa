@@ -7,6 +7,7 @@ body {
     /* overflow: hidden; */
     overflow-x: hidden;
     margin: 0 auto;
+    height: 150vh;
 
 }
 .reference {
@@ -184,12 +185,16 @@ a:hover {
 
 }
 .section-discription {
-    color: purple;
+    color: black;
     float: left;
-    position: absolute;
+    /* position: absolute; */
     padding: 2vh 0 0 2vw;
     font-size: 3vh;
     font-family: 'Black Han Sans', sans-serif;
+
+}
+#bio-disc {
+    position: absolute;
 
 }
 .bio-img {
@@ -286,13 +291,13 @@ a:hover {
     height: 650px;
 }
 #resume-shadow {
-    top: -159vh;
+    top: -161vh;
     height: 1369px;
     padding-bottom: 5px;
 }
 #resume-decor {
     padding-top: 5px;
-    top: -396vh;
+    top: -398vh;
     height: 1369px;
 }
 .resume-wrapper {
@@ -316,20 +321,17 @@ a:hover {
     font-family: 'Black Han Sans', sans-serif;
 }
 #projects-shadow {
-    top: -276vh;
-    height: 288vh;
-    background: rgba(0, 0, 0, 0.13);
+    top: -393vh;
+    height: 290vh;
 }
 #projects-decor {
-    top: -572vh;
-    height: 288vh;
-    background: rgba(0, 0, 0, 0.13);
+    top: -690vh;
+    height: 290vh;
 
 }
 .projects-content {
     background: #EFEFEF;
     height: 285vh;
-    background: rgba(0, 0, 0, 0.13);
 
 }
 .projects-wrapper {
@@ -353,14 +355,21 @@ a:hover {
     top: -2vh;
 }
 #contacts-shadow {
-    top: -567vh;
+    top: -686vh;
 
 }
 #contacts-decor {
-    top: -609vh;
-
+    top: -727vh;
 }
 .contacts-wrap {
+    display: block;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    line-height: 30px;
+    font-family: 'Anaheim', sans-serif;
 
 }
 /* Extra small devices (phones, 600px and down) */
