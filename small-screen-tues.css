@@ -1,0 +1,86 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+    body {
+        /* max-width: 750px; */
+        /* blue */
+        background: rgb(53, 53, 79);
+    }
+    .spinning-flower {
+        top: -5vh;
+    }
+    .box-shadow {
+        left: -2vh;
+    }
+    .header-para {
+        /* height: 40vh; */
+        line-height: 2em;        
+    }
+    .header-span-one {
+        font-size: 3vw;
+    }
+    .header-span-two {
+        font-size: 4vw;
+        margin: -1em auto;
+    }
+    .header-span-three {      
+        font-size: 4vw;
+        padding-left: 18vw;
+    }
+    .nav-wrap {
+        margin-top: -31vh;
+        padding-right: 9vw;
+    }
+    #bio-shadow {
+        height: 90vh;
+        top: 10vh;
+    }
+    #bio-decor {
+        height: 90vh;
+        top: -96vh;
+    }
+    #bio-disc {
+        font-size: 5vh;
+    }
+    /* .bio-img {
+        height: 400vh;
+        background-position: 25% 47%;
+        background-size: 130%;
+    } */
+    .bio-img {
+        margin: 6px 0;
+        border-radius: 50%;
+        min-width: 200px;
+        min-height: 200px;
+        background: url("images/portrait.jpeg");
+        background-position: 30% 54%;
+        background-size: 240% 240%;
+    }
+    .bio-content {
+        background-color: rgba(136, 0, 0, 0.351);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 75vh;
+        margin: 0 0 -50vh 0;
+    
+    }
+    a { 
+        color: black; 
+        font-weight: 300; 
+        letter-spacing: 4px; 
+        text-decoration: none; 
+        background: rgb(255, 255, 255);
+        border: 5px solid #000;
+        border-radius: 5px; 
+        padding: 4vh 4px; 
+        display: inline-block; 
+        width: 100%; 
+        text-align: center; 
+        margin-left: 7px;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 7vh;
+        /* text-align: right; */
+    
+    }
+
+}
