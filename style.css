@@ -29,6 +29,7 @@ body {
     top: -15vh;
     z-index: 1;
     margin: -15vh 0;
+    overflow: hidden;
 
 }
 .header-container {
