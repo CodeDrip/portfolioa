@@ -7,15 +7,15 @@ body {
     /* overflow: hidden; */
     overflow-x: hidden;
     margin: 0 auto;
-    height: 150vh;
+    /* height: 150vh; */
 
 }
-.body-wrap {
+/* .body-wrap {
     height: 895vh;
     overflow-y: hidden;
     margin: 0 auto;
 
-}
+} */
 .reference {
     visibility: hidden;
 }
@@ -34,20 +34,29 @@ body {
 .header-container {
     /* position: relative; */
     margin: 2vh auto;
-    margin-top: -6vh;
+    /* margin-top: -9vh; */
 
     /* height: 40vh; */
     /* display: flex; */
 
 }
-.box-shadow {
+/* .box-shadow {
+    position: relative;
+    background: black;
+    height: 35vh;
+    width: 90vw;
+    z-index: 3;
+    top: 50vh;
+    right: 50vw;
+} */
+/* .box-shadow {
     position: relative;
     background: black;
     height: 35vh;
     width: 90vw;
     margin: 5vh;
     top: 12vh;
-}
+} */
 .box-decor {
     position: relative;
     background-size: auto;
@@ -60,14 +69,22 @@ body {
     height: 35vh;
     width: 90vw;
     margin: 5vh auto;
-    top: -30vh;
+    z-index: 2;
+    
+    -webkit-box-shadow: -12px 13px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: -12px 13px 0px 0px rgba(0,0,0,1);
+    box-shadow: -12px 13px 0px 0px rgba(0,0,0,1);
+    
+
+    /* top: -30vh; */
 } 
 #header-shadow {
     height: 35vh;
-    top: 12vh;}
+    /* top: 12vh;} */
+}
 #header-decor {
     height: 35vh;
-    top: -30vh;
+    /* top: -30vh; */
 }
 header {
     /* visibility: hidden; */
@@ -128,7 +145,7 @@ header {
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
-    margin-top: -30vh;
+    /* margin-top: -30vh; */
     padding-right: 9vw;
 }
 li {
@@ -158,11 +175,11 @@ a:hover {
 }
 #bio-shadow {
     height: 80vh;
-    top: 2vh;
+    /* top: 2vh; */
 }
 #bio-decor {
-    height: 99vh;
-    top: -86vh;
+    height: 199vh;
+    /* top: -86vh; */
 }
 .bio-wrapper {
     background-color: #EFEFEF;
@@ -171,23 +188,21 @@ a:hover {
     align-items: center; */
     color: black;
     /* height: 75vh; */
-    height: 98vh;
-    top: 5vh;
+    height: 108vh;
+    /* top: 5vh; */
     width: 86vw;
     margin: 10px;
     /* padding-bottom: 50vh; */
 
 }
-.bio-wrapper-1 {
-    top: 50vh;
-}
+
 .bio-content {
     background-color: rgba(136, 0, 0, 0.351);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 97vh;
-    margin: 0 0 -50vh 0;
+    height: 107vh;
+    /* margin: 0 0 -50vh 0; */
 
 }
 .section-discription {
@@ -204,6 +219,7 @@ a:hover {
 
 }
 .bio-img {
+    top: 50px;
     border-radius: 50%;
     width: 225px;
     height: 207px;
@@ -224,8 +240,8 @@ a:hover {
     height: 55vh;
     width: 80vw;
     text-align: justify;
-    font-size: 4vmin;
-    line-height: 25px;
+    font-size: 4.5vmin;
+    line-height: 15px;
 }
 .triangle {
     width:200px;
@@ -250,11 +266,11 @@ a:hover {
 }
 #skills-shadow {
     height: 60vh;
-    top: -75vh;
+    /* top: -75vh; */
 }
 #skills-decor {
     height: 60vh;
-    top: -141vh;
+    /* top: -141vh; */
 }
 #skills-disc {
     position: relative;
@@ -291,17 +307,17 @@ a:hover {
     font-family: 'Black Han Sans', sans-serif;
 }
 #resume-container {
-    top: -50vh;
+    /* top: -50vh; */
     height: 650px;
 }
 #resume-shadow {
-    top: -161vh;
+    /* top: -161vh; */
     height: 1369px;
     padding-bottom: 5px;
 }
 #resume-decor {
     padding-top: 5px;
-    top: -398vh;
+    /* top: -398vh; */
     height: 1369px;
 }
 .resume-wrapper {
@@ -325,11 +341,11 @@ a:hover {
     font-family: 'Black Han Sans', sans-serif;
 }
 #projects-shadow {
-    top: -393vh;
+    /* top: -393vh; */
     height: 290vh;
 }
 #projects-decor {
-    top: -690vh;
+    /* top: -690vh; */
     height: 290vh;
 
 }
@@ -359,11 +375,11 @@ a:hover {
     top: -2vh;
 }
 #contacts-shadow {
-    top: -686vh;
+    /* top: -686vh; */
 
 }
 #contacts-decor {
-    top: -727vh;
+    /* top: -727vh; */
 }
 .contacts-wrap {
     display: block;
@@ -376,6 +392,24 @@ a:hover {
     font-family: 'Anaheim', sans-serif;
     font-size: 3.5vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 601px) {
     body {
@@ -386,7 +420,7 @@ a:hover {
 
     }
     .body-wrap {
-        height: 895vh;
+        height: 995vh;
         overflow-y: hidden;
     }
     .spinning-flower {
@@ -402,7 +436,7 @@ a:hover {
     }
     .header-container {
         /* position: absolute; */
-        top: -14vh;
+        /* top: -14vh; */
         
     }
     .header-para {
@@ -436,45 +470,104 @@ a:hover {
         padding-left: 10vw;
     }
     .box-decor {
-        top: -36vh;
+        /* top: -36vh; */
     }
-    .box-shadow {
+    /* .box-shadow {
         position: relative;
-        /* display: flex; */
+        /* display: flex; 
         background: black;
         height: 35vh;
         width: 90vw;
         margin: 5vh;
-        top: 5vh;
+        /* top: 5vh; 
         right: 3vw;
-    }
+    } */
     .nav-wrap {
-        margin-top: -30vh;
+        margin-top: 7vh;
         /* top: -39vh; */
+    margin-right: 25px;
+    }
 
+    .triangle {
+        width: 253px;
+        height: 513px;
+        overflow: hidden;
+        position: absolute;
+        z-index: -3;
+        bottom: -85vh;
     }
-    .bio-container {
+    a { 
+        font-size: 6vh;
+        color: black; 
+        font-weight: 300; 
+        letter-spacing: 2px; 
+        text-decoration: none; 
+        background: rgb(255, 255, 255);
+        border: 5px solid #000;
+        border-radius: 5px; 
+        padding: 8vh 4px; 
+        display: inline-block; 
+        width: 100%; 
+        text-align: center; 
+        margin-left: 7px;
+        font-family: 'Black Han Sans', sans-serif;
+        /* text-align: right; */
+    
+    }
+    /* .bio-container {
         top: -116vh;
-    }
-    #bio-shadow {
+    } */
+    /* #bio-shadow {
         height: 103vh;
         top: 1vh;
-    }       
+    }        */
      #bio-decor {
-        height: 103vh;
-        top: -109vh;
+        height: 170vh;
+        display: flex;
+        justify-content: center;
+        /* top: -109vh; */
+    }
+    .bio-content {
+        height: 165vh;
+        display: flex;
+
+    }
+    .bio-wrapper {
+        height: 145vh;
+        padding-bottom: 130px;
+
+
     }
     .bio-img {
         background-position: 25% 47%;
         background-size: 190%;
+        margin-top: 10px;
+    }
+    .bio-header {
+        background: blue;
+        padding-top: 2vh;
+        /* margin-top: 2vh; */
+
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 3vh;
+    }
+    .bio-par {
+        padding-top: 2vh;
+        font-family: 'Anaheim', sans-serif;
+        background: orange;
+        height: 55vh;
+        width: 80vw;
+        text-align: justify;
+        font-size: 6vmin;
+        line-height: 6.5vmin;
     }
     #skills-decor {
         height: 60vh;
-        top: -166vh;
+        /* top: -166vh; */
     }
     #skills-shadow {
         height: 60vh;
-        top: -98vh;
+        /* top: -98vh; */
     }
 
 }
